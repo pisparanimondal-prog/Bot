@@ -1,0 +1,117 @@
+{
+  "telegram": {
+    "bot_token": "8798523004:AAELRIG1NJYeLl12UN34p1QWDrE9fd57DNg",
+    "chat_ids": [
+      "-1003140522913"
+    ]
+  },
+  "apis": [
+    {
+      "id": "api_0c89bb65",
+      "name": "Time SMS",
+      "enabled": true,
+      "url": "http://51.68.180.239/ints/agent/res/data_smscdr.php",
+      "sesskey": "Q05RR0FST0JBVg==",
+      "cookies": {
+        "PHPSESSID": "944ccb3ab0f7a1dda4a8c9926e981fad"
+      },
+      "username": "AlbertMax",
+      "password": "Albert000",
+      "base_url": "http://51.68.180.239/ints",
+      "headers": {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Connection": "keep-alive",
+        "Referer": "http://51.68.180.239/ints/agent/SMSCDRReports",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest"
+      }
+    },
+    {
+      "id": "api_fd6b18f1",
+      "name": "Lamix sms",
+      "enabled": true,
+      "url": "http://139.99.208.63/ints/agent/res/data_smscdr.php",
+      "sesskey": "",
+      "cookies": {
+        "PHPSESSID": "4bf1d4045ff007b8693e772eb5e1e097"
+      },
+      "username": "Rajumondal",
+      "password": "Rajumondal",
+      "base_url": "http://139.99.208.63/ints",
+      "headers": {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Connection": "keep-alive",
+        "Referer": "http://139.99.208.63/ints/agent/SMSCDRReports",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest"
+      }
+    },
+    {
+      "id": "api_0e89db84",
+      "name": "NUMBER PANEL",
+      "enabled": true,
+      "url": "http://51.89.99.105/NumberPanel/agent/res/data_smscdr.php",
+      "sesskey": "Q05RR0FST0JBVg==",
+      "cookies": {
+        "PHPSESSID": "frvv9h443c44i256kkvi0g1eha"
+      },
+      "username": "rajumondal",
+      "password": "Raju123@#",
+      "base_url": "http://51.89.99.105/NumberPanel",
+      "headers": {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Connection": "keep-alive",
+        "Referer": "http://51.89.99.105/NumberPanel/agent/SMSCDRReports",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest"
+      },
+      "polling_interval": 15.0
+    },
+    {
+      "id": "api_67bf38b4",
+      "name": "Seven1tail",
+      "enabled": true,
+      "url": "http://94.23.120.156/ints/agent/res/data_smscdr.php",
+      "sesskey": "Q05RR0FST0JBVg==",
+      "cookies": {
+        "PHPSESSID": "k9a8btrm5r345ddubdluiem7fc"
+      },
+      "username": "rajumondal",
+      "password": "Raju123@#",
+      "base_url": "http://94.23.120.156/ints",
+      "headers": {
+        "Accept": "application/json, text/javascript, */*; q=0.01",
+        "Accept-Language": "en-US,en;q=0.9",
+        "Connection": "keep-alive",
+        "Referer": "http://94.23.120.156/ints/agent/SMSCDRReports",
+        "User-Agent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Mobile Safari/537.36",
+        "X-Requested-With": "XMLHttpRequest"
+      }
+    }
+  ],
+  "settings": {
+    "polling_interval": 5,
+    "admin_ids": [
+      5692411527
+    ],
+    "bot_link_url": "https://t.me/ANG0X5BOT",
+    "channel_link_url": "https://t.me/meta_otp"
+  },
+  "button_styles": {
+    "copy": "success",
+    "bot_link": "danger",
+    "channel": "primary",
+    "delete": "danger",
+    "disable": "danger",
+    "enable": "success",
+    "add": "success",
+    "cancel": "",
+    "edit": "",
+    "back": "",
+    "test": "primary",
+    "info": ""
+  }
+}
