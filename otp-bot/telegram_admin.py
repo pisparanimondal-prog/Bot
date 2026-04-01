@@ -843,7 +843,7 @@ def create_bot():
                 parse_mode='HTML')
             def _do_test_sms():
                 try:
-                    from otp_bot import fetch_latest_otp, extract_otp_code, detect_service, send_telegram_message
+                    from otp_bot import fetch_latest_otp, extract_otp_code, detect_service, send_telegram_message, _col
                     sess = requests.Session()
                     sess.verify = False
                     sess.headers.update(api.get('headers', {}))
@@ -857,9 +857,9 @@ def create_bot():
                             reply_markup=_jkb([[_btn("✏️ Edit API", cb=f"api:edit:{api_id}")]]))
                         return
                     latest = rows[0]
-                    number   = latest[2] or 'Unknown'
-                    svc_raw  = latest[3] or 'Unknown'
-                    raw_text = latest[5] or ''
+                    number   = _col(latest, 2) or 'Unknown'
+                    svc_raw  = _col(latest, 3) or 'Unknown'
+                    raw_text = _col(latest, 5) or ''
                     otp_code = extract_otp_code(raw_text) or '——'
                     svc_key  = detect_service(svc_raw, raw_text)
                     ok = send_telegram_message(cfg, number, svc_raw, raw_text, otp_code, api['name'])
