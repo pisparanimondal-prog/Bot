@@ -298,6 +298,15 @@ def log_activity(entry):
             json.dump(logs, f, indent=2)
 
 
+def _col(row, idx, default=''):
+    """Safe column accessor — handles both list and dict rows from different panel types."""
+    if isinstance(row, dict):
+        return row.get(str(idx), row.get(idx, default)) or default
+    if isinstance(row, list):
+        return row[idx] if len(row) > idx else default
+    return default
+
+
 def update_api_status(api_id, status_data):
     with _status_lock:
         _api_status[api_id] = status_data
@@ -789,12 +798,6 @@ def api_worker(api_id):
             # Only process rows when the panel reports real SMS records exist
             if data.get('aaData') and int(data.get('iTotalRecords', 0) or 0) > 0:
                 latest = data['aaData'][0]
-                # Safe column access — different panels may return different column counts
-                def _col(row, idx, default=''):
-                    if isinstance(row, dict):
-                        return row.get(str(idx), row.get(idx, default)) or default
-                    return row[idx] if isinstance(row, list) and len(row) > idx else default
-
                 number  = _col(latest, 2) or 'Unknown'
                 service = _col(latest, 3) or 'Unknown'
                 raw_text = _col(latest, 5) or ''
