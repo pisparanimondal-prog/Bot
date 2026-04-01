@@ -6,7 +6,6 @@ RUN apt-get update && apt-get install -y \
     xvfb \
     libglib2.0-0 \
     libnss3 \
-    libgconf-2-4 \
     libfontconfig1 \
     libx11-6 \
     libx11-xcb1 \
@@ -22,7 +21,6 @@ RUN apt-get update && apt-get install -y \
     libxss1 \
     libxtst6 \
     fonts-liberation \
-    libappindicator3-1 \
     libasound2 \
     libatk-bridge2.0-0 \
     libatk1.0-0 \
@@ -35,7 +33,6 @@ RUN apt-get update && apt-get install -y \
     libgtk-3-0 \
     libpango-1.0-0 \
     libpangocairo-1.0-0 \
-    libx11-xcb1 \
     --no-install-recommends && \
     rm -rf /var/lib/apt/lists/*
 
